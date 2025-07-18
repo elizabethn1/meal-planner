@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Meal Planner</title>
     </head>
+    
     <body>
         <h1>Meal Planner</h1>
-        <form>
+        <form id="preferencesForm">
             <label for="diet">Enter your diet(s):</label><br>
-            <input type="text" id="diet" name="diet" placeholder="e.g., vegan, low-carb, pescatarian"><br>
-
+            <input type="text" id="diet" placeholder="e.g., vegan, low-carb, pescatarian" required><br>
 
             <label for="restrictions">Enter your dietary restriction(s):</label><br>
-            <input type="text" id="restrictions" name="restrictions" placeholder="e.g., nuts, dairy"><br>
+            <input type="text" id="restrictions" placeholder="e.g., nuts, dairy" required><br>
 
-            <label for="plan_length">Number of days (1-7):</label><br>
-            <input type="number" id="plan_length" name="plan_length" min="1" max="7"><br><br>
+            <label for="planLength">Number of days (1-7):</label><br>
+            <input type="number" id="planLength" min="1" max="7" required><br><br>
 
-            <button type="submit">Generate Meal Plan</button>
+            <button type="submit" id="submit">Submit</button>
 
         </form>
     </body>
+
+    <script src="script.js"></script>
 </html>
